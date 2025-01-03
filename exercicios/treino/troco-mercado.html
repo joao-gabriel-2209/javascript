@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compras</title>
+</head>
+<body>
+    <script>
+        var val1 = Number( window.prompt('qual o valor que você tem para ir ao mercado? '))
+        var val2 = Number(window.prompt('qual o valor das compras que você estima que vai dr? '))
+        var res = val1 >= val2
+        window.alert('se a resposta for "true", você poderá ir ao mercado')
+        window.confirm(res)
+        var troco = val1 - val2
+        alert("e o troco que você receberá será de " + troco)
+    </script>
+</body>
+</html>

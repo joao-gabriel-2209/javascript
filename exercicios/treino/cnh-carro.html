@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cnh e carro</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font: normal arial 14pt
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var idd = Number(prompt("qual a sua idade? "))
+        var est = (idd >= 18 ? 'de maior' : "de menor")
+        var ex = 'de maior'
+        var escrita =( est != ex ? "infelismente você ainda não pode tirar a carteira de motorista" : "parabéns, você já pode tirar a carteira de motorista")
+        alert(escrita)
+        var guard = Number(prompt("qual o valor que tem guardado? "))
+        var val1 = Number(prompt("qual o valor da cnh? " ))
+        var car = Number(prompt("qual o valor do carro que você deseja comprar? "))
+        var escrita2 = (guard >= val1 ? "parabéns!!! você conseguirá pagar a sua carteira de motorista a vista" : "você não conseguirá pagar a sua carteira de motorista a vistá")
+        alert(escrita2)
+        var rest = (guard - val1)
+        alert("e sobrará " + rest + " para ajudar você a comprar o seu carro")
+        car = (car-rest)
+        alert("e você terá que financiar um total de " + car)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>começando com DOM</title>
+    <STYLE>
+        BODY{
+            background-color: rgb(92, 92, 73);
+            color: rgb(208, 208, 145);
+            font: normal 14pt italic;
+        }
+    </STYLE>
+</head>
+<body>
+    <H1><strong>-DOM </strong></H1>
+    <P>primeiros passos com <strong>DOM</strong></P>
+    <p CLASS='sla'>segundos passos com <strong>DOM</strong></p>
+    <div class='msg'> clique em mim</div> 
+    <script>
+        var tit = document.getElementsByTagName('h1')[0]//getElementsByTagName serve para selecionar um elemento
+        /*document.write(tit.innerText)//innerText serve para escrever o texto da seleção
+        document.write(tit.innerHTML)//innerHtml serve para selecionar tudo, até mesmo oque está em negrito*/
+        var mensagem = document.querySelector('div.msg')//colocando um id nessa msg, para selacionar melhor//
+        mensagem.style.background='ciane'
+        tit.style.background='blue'
+        tit.style.color='crimson'
+        var mensagem2 = document.querySelector('p.sla')
+        mensagem2.style.background='black'
+    </script>
+</body>
+</html>

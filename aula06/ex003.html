@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> calculadora</title>
+    <style> 
+        body{
+            background-color: rgb(2, 94, 131);/*cor do fundo do site*/
+            color: rgb(225, 221, 221);/*mudando a cor de totas as letras*/
+            font: normal 13pt arial}/*deixando a letra mais bonita, font, tamanho*/
+
+            h1{
+                color: rgb(128, 133, 133);/*mudando o titulo, so mudei cor, mas pode ser mudado td*/
+            }
+            
+            p{
+                color: rgb(235, 244, 236)/*agr mudando do paragrafo*/
+            }
+    </style>
+</head>
+<body>
+    <h1>primeira calculadora </h1> 
+    <p>éssa é minha primeira calculadora, por isso essa aparencia
+    <script>
+       var n1 = parseFloat(prompt("qual o primeiro numero que vc deseja somar? "))// o prompt retorna um valor em prompt
+       var n2 = parseInt(prompt("agora digite o segundo valor da soma "))//prompt devolve valor em string
+       //parseFloat(QUEBRADOS), parseInt(INTEIROS) E NUMBER(QUALQUER) conversão de string para number
+       var s = n1 + n2 //o sinal de + serve para soma e concatenação
+       alert(`o resultado da sua soma é ${s}`)// o ${} serve para simplificar mas tem que estar  em ``
+    </script>
+</body>
+</html>
